@@ -1,7 +1,7 @@
 alert("olá mundo!")
 
 var nasc = 2010;          
-let nome = "Lara";    
+let nome = "'Lara'";    
 const viva = true;        
 let altura = 1.61;        
 
