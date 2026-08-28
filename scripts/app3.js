@@ -3,7 +3,7 @@ let nome = "Lara";
 let viva = true;        
 let altura = 1.61;      
 let sexo = undefined;   
-let peso = null;       
+let peso = 65;       
 let imc = "peso"*10;   
 
 alert(`Tipo de nasc: ${typeof (nasc)}`);
