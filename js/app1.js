@@ -2,7 +2,7 @@ let vezes = prompt("Digite a quantidade de vezes: ");
 vezes = Number(vezes)
 let i = 1;
 
-do{
+while(i <= vezes){
     alert(`Contei ${i} vezes`);
     i = i + 1;
-}while(i <= vezes);
+}
