@@ -1,13 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aula 03: Variáveis</title>
+    <title>Aula 08: Intração JS e HTML</title>
 </head>
 <body>
-    <h1>OLá, meu nome é Lara!</h1>
-    <h2>Esta é minha primeira aula de design web.</h2>
-    <h3>Data: 14/08/2026</h3>
-    <script src="./app.js"defer></script>
+    <h3>Data: 11/09/2026</h3>
+    <table border = "1">
+        <tr>
+            <td>
+                <button id = "ant">Anterior</button>
+                <button id = "prox">próximo</button>
+            </td>
+            <td rowspan = "4">
+                <img id = "foto" src = "./img/foto1.jpg" width = "350px" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select id = "combobox">
+                <option value = "1">Estrelinha</option>
+                <option value = "2">Totó</option>
+                <option value = "3">Lulu</option>
+                <option value = "4">Cookie</option>
+                <option value = "5">Mel</option>
+                <option value = "6">Frederico</option>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li id = "p1">Estrelinha</li>
+                    <li id = "p2">Totó</li>
+                    <li id = "p3">Lulu</li>
+                    <li id = "p4">Cookie</li>
+                    <li id = "p5">Mel</li>
+                    <li id = "p6">Frederico</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type = "range" id = "opacidade" min = "0" max = "1" step = "0.01" value = "1">
+            </td>
+        </tr>
+    </table>
+    <script src="./js/ap.js"defer></script>
 </body>
 </html>
