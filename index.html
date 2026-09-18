@@ -2,12 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aula 03: Variáveis</title>
+    <title>Aula 09: Variáveis</title>
 </head>
 <body>
-    <h1>OLá, meu nome é Lara!</h1>
-    <h2>Esta é minha primeira aula de design web.</h2>
-    <h3>Data: 14/08/2026</h3>
-    <script src="./app.js"defer></script>
+    <h1>Queridos inimigos</h1>
+    <hr/>
+    <form action="#" id="cadastro" method="post">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td>
+                    <input type="text" required name="nome" ninlength="3"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Nascimento:</td>
+                <td>
+                    <input type="date" name="dasc"/>
+                </td>
+            </tr>
+            <tr>
+                <td>whatsApp:</td>
+                <td>
+                    <input type="tel" name="whatsApp"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Adicionar">
+                    <input type="reset">                    
+                </td>
+            </tr>
+        </table>
+    </form>
+    <ul id="lista"">
+        <li>Lista Vázia</li>
+    </ul>
+    <script src="./app.js" defer></script>
 </body>
 </html>
