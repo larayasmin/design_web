@@ -1,0 +1,56 @@
+class Animal{
+    constructor(n, c = "desconhecido", a = 0.0, p = 0, r = "Vira-lata"){
+        this.name = n;
+        this.cor = c;
+        this.altura = a;
+        this.peso = p;
+        this.raca = r;
+    }
+    falar(){
+        alert("oi");
+    }
+    comer(kg){
+        this.peso = this.peso + kg;
+        alert("Comi");
+    }
+    cagar(kg){
+        this.peso = this.peso -  kg;
+        alert("Caguei");
+    }
+    saudar(){
+        let msg = `Olá meu nome é: ${this.nome}\n`;
+        msg = msg + `Cor: ${this.cor}\n`
+        msg = msg + `Raça: ${this.raca}\n`
+        msg = msg + `Peso: ${this.peso}\n`
+        msg = msg + `Altura: ${this.altura}\n`
+        return msg;
+    }
+}
+
+class Cachorro extends Animal{
+    constructor(n, c = "desconhecido", a = 0.0, p = 0, r = "Vira-lata"){
+        super(n,c,a,p,r);
+        this.patas = 4;
+    }
+    falar(){
+        alert("au au!");
+    }
+    saudar(){
+        let msg = super().saudar();
+        msg = msg + "\nSou um cachorro!";
+        alert(msg);
+    }
+}
+
+class Passaro extends Animal{
+    constructor(n, c = "desconhecido", a = 0.0, p = 0, r = "Vira-lata"){
+        super(n,c,a,p,r);
+    }
+    falar(){
+        alert("fiu-fiu");
+    }
+}
+
+const estrelinha = new Cachorro("Estrelinha Bolinha");
+const pretinho = new Cachorro("Pretinho", "preto e branco", 1.10, 45, "Vira-lata");
+const quiquinho = new Passaro("Quiquinho chiquinho", undefined, undefined, undefined, "Periquito");
